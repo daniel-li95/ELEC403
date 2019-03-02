@@ -1,0 +1,42 @@
+ // VerilogA for ELEC403, XOR, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module XOR(A, B, OUT);
+
+input A, B;
+output OUT;
+
+electrical A, B, OUT;
+
+
+parameter real Vth = 0.6 from [0:inf); // set threshod for input and clock
+parameter real Voh = 1.2 from [0:inf);  // set threshod for input and clock
+parameter real Vol = 0 from [0:inf);  // set threshod for input and clock
+parameter real Delay = 0 from [0:inf);  // set Delay for output
+parameter real Rise = 0 from [0:inf);  // set rise time for output
+parameter real Fall = 0 from [0:inf);  // set fall time for output
+
+real OUTBUFF;
+
+
+analog begin
+
+if((V(A) >  Vth) &(V(B) >  Vth))
+OUTBUFF = Vol;
+else if ((V(A) < Vth) &(V(B) < Vth))
+OUTBUFF = Vol;
+else 
+OUTBUFF = Voh;
+
+
+V(OUT) <+ transition(OUTBUFF, Delay, Rise, Fall);
+
+  $bound_step (1/100G);  
+
+end
+
+
+
+endmodule

@@ -1,0 +1,124 @@
+\# Program start time UTC 2019.03.03 08:06:05.577
+\# Local time Sunday 3 March 2019, 12:06 am
+\o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 10/30/2014 22:43 (sjfnl172) $
+\o Hierarchy:		/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.6-64b.500.9  (64-bit addresses)
+\# Command line:	/CMC/tools/cadence/IC06.16.090_lnx86/tools/dfII/bin/64bit/virtuoso -log Mylog
+\# Host name (type):	ssh-soc (x86_64)
+\# Operating system:	Linux 2.6.32-754.3.5.el6.x86_64 #1 SMP Thu Aug 9 11:56:22 EDT 2018
+\# Linux /etc/issue:	NOTE: This system is for the use of authorized users only
+\# X display name (WxH):	:76.0 (1536x801)
+\# Available geometry:			TL(0:31) BR(1535:759)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 70000000)
+\# X resource pool:	base 0x1800000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        322 MB
+\# Available memory:	     41,315 MB
+\# System memory:	     80,935 MB
+\# Maximum memory size:	     80,686 MB
+\# Max mem available:	     41,388 MB
+\# Initial memory used:	         73 MB
+\#        process size:	        733 MB
+\# Qt version:		4.7.2
+\# Window Manager:	gnome
+\# User Name:		v6d9
+\o Working Directory:	ssh-soc:/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds
+\# Process Id:		64327
+\o 
+\o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.18s.
+\p > 
+\a ddsHiCreateLibrary()
+\p > 
+\a hiiSetCurrentForm('ddsCreateLibForm)
+\r t
+\a hiFormCancel(ddsCreateLibForm)
+\r t
+\r nil
+\# Available memory:         41,226 MB at UTC 2019.03.03 08:06:16.090
+\# Memory report: Maximum memory size now 41,370 MB at UTC 2019.03.03 08:06:16.090
+\a ddsOpenLibManager()
+\r t
+\o  
+\o Library Manager created library "ELEC403"
+\p > 
+\a hiiSetCurrentForm('ddsTechOptionForm)
+\r t
+\a ddsTechOptionForm->Option->value= "Attach to an existing technology library"
+\r "Attach to an existing technology library"
+\a hiFormDone(ddsTechOptionForm)
+\i tcNewLibDisplayAttachTechForm("ELEC403")
+\p > 
+\a hiiSetCurrentForm('tcNewLibAttachTechForm)
+\r t
+\a tcNewLibAttachTechForm->attachTechLibList->value= '( "gpdk045" )
+\r ("gpdk045")
+\a hiFormDone(tcNewLibAttachTechForm)
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading Model Management File ...
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: using         196 MB, process size 887 MB at UTC 2019.03.03 08:06:39.210
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 4.0 (17-June-2014)
+\o 
+\o done!
+\o Loaded gpdk045/libInit.il successfully!
+\o INFO (TECH-180011): Design library 'ELEC403' successfully attached to technology library 'gpdk045'.
+\r t
+\r t

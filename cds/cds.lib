@@ -15,3 +15,4 @@ INCLUDE $PDKDIR/gpdk045/cds.lib
 INCLUDE $PDKDIR/gsclib045/cds.lib
 INCLUDE $PDKDIR/giolib045/cds.lib
 #------------------------------------------ User libraries start here:
+DEFINE ELEC403 /ubc/ece/home/ugrads/v/v6d9/ELEC403/cds/ELEC403

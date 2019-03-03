@@ -1,0 +1,34 @@
+\o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 08/24/2014 13:49 (sjfnl844) $
+\o Sub version:		sub-version  s012 
+\o Arguments:		-unmapped -mpssession virtuoso64327 -mpshost ssh-soc 
+\o Working Directory:	ssh-soc:/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds
+\o 64-bit offsets
+\o Qt version: 		4.7.2
+\o changeWorkingDir("/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(342 44 807 549))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a NewLibShell->QLineEdit2->value = "/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds/"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(492 39 507 559))
+\a NewLibShell->newLibNameText->value = "ELEC403"
+\a NewLibShell->newLibOKButton->value = t
+\a NewLibShell->subDialog->value = '("/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds" "/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds/")
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\o Created new library "ELEC403" at /ubc/ece/home/ugrads/v/v6d9/ELEC403/cds/ELEC403.
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(589 276 314 129))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ELEC403"
+\a cdsLibManager->libLineEdit->value = "ELEC403"

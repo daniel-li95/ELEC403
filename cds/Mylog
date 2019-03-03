@@ -1,0 +1,99 @@
+\# Program start time UTC 2019.03.03 08:32:07.263
+\# Local time Sunday 3 March 2019, 12:32 am
+\o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 10/30/2014 22:43 (sjfnl172) $
+\o Hierarchy:		/ubc/ece/data/cmc2/tools/cadence/IC06.16.090_lnx86/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.6-64b.500.9  (64-bit addresses)
+\# Command line:	/CMC/tools/cadence/IC06.16.090_lnx86/tools/dfII/bin/64bit/virtuoso -log Mylog
+\# Host name (type):	ssh-soc (x86_64)
+\# Operating system:	Linux 2.6.32-754.3.5.el6.x86_64 #1 SMP Thu Aug 9 11:56:22 EDT 2018
+\# Linux /etc/issue:	NOTE: This system is for the use of authorized users only
+\# X display name (WxH):	:76.0 (1536x801)
+\# Available geometry:			TL(0:31) BR(1535:759)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 70000000)
+\# X resource pool:	base 0x1800000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        311 MB
+\# Available memory:	     41,095 MB
+\# System memory:	     80,935 MB
+\# Maximum memory size:	     80,697 MB
+\# Max mem available:	     41,167 MB
+\# Initial memory used:	         73 MB
+\#        process size:	        733 MB
+\# Qt version:		4.7.2
+\# Window Manager:	gnome
+\# User Name:		v6d9
+\o Working Directory:	ssh-soc:/ubc/ece/home/ugrads/v/v6d9/ELEC403/cds
+\# Process Id:		34897
+\o 
+\o COPYRIGHT © 1992-2014  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2014  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.18s.
+\a hiResizeWindow(window(1) list(378:208 1103:401))
+\r t
+\a hiResizeWindow(window(1) list(349:273 1074:466))
+\r t
+\a hiResizeWindow(window(1) list(327:330 1052:523))
+\r t
+\a hiResizeWindow(window(1) list(326:338 1051:531))
+\r t
+\a hiResizeWindow(window(1) list(325:341 1050:534))
+\r t
+\a hiResizeWindow(window(1) list(325:343 1050:536))
+\r t
+\a hiResizeWindow(window(1) list(325:347 1050:540))
+\r t
+\a hiResizeWindow(window(1) list(324:351 1049:544))
+\r t
+\a hiResizeWindow(window(1) list(324:353 1049:546))
+\r t
+\a hiResizeWindow(window(1) list(324:357 1049:550))
+\r t
+\a hiResizeWindow(window(1) list(324:358 1049:551))
+\r t
+\a hiResizeWindow(window(1) list(324:359 1049:552))
+\r t
+\a hiResizeWindow(window(1) list(325:359 1050:552))
+\r t
+\p > 
+\a ddsOpenLibManager()
+\r t
+\# Available memory:         41,006 MB at UTC 2019.03.03 08:32:18.250
+\# Memory report: Maximum memory size now 41,151 MB at UTC 2019.03.03 08:32:18.250
+\a ddsOpenLibManager()
+\r t
+\a hiQuit()
+\p > 
+\a hiDBoxOK(hiQuitDBox)
+\r t
+\o 
+\o Loading lce.cxt 
+\# Memory report: on exit            145 MB, process size 836 MB at UTC 2019.03.03 08:34:27.361
+\# Memory report: peak usage         145 MB, process size 836 MB

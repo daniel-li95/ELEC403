@@ -1,0 +1,39 @@
+// VerilogA for ELEC403, clock, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Clock(out);
+
+
+output out; voltage out;			// output signal
+parameter real freq= 5G from (0:inf);		// output frequency
+parameter real vl= 0;				// low output voltage
+parameter real vh= 1 ;				// high output voltage
+parameter real transition_time = 10p from (0:inf);	// transition time of output
+parameter real jitter=0 from [0:1/freq); // white edge-to-edge jitter
+integer n, Seed;
+real next, dT, dt, SD, T;
+
+analog begin
+    @(initial_step) begin
+	Seed = -459;
+	SD = jitter;
+	T = 0.5/freq;
+    end
+    @(timer(0,T)) begin
+	n = !n;
+	dt = SD*$rdist_normal(Seed,0,1);
+    if(dt < - T/2 + 10p)
+       dt = -T/2 + 10p;
+    else if (dt > T/2 - 10p)
+       dt = T/2 - 10p;
+    end
+    V(out) <+ transition(n ? vh : vl, T+dt, transition_time);
+
+  $bound_step (1/100G);  
+
+end
+endmodule
+
+

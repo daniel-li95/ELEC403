@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("ELEC403" "TestBench_Clock" "schematic" "spectre")
+descriptionText = "None"

@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"Time Stamp" "Apr  8 22:38:44 2019"
+TYPE
+"variable" STRUCT(
+"value" FLOAT DOUBLE
+) PROP( "key" "element" )
+VALUE
+"RX_Clock_Delay" "variable" ( 2.46e-9 ) PROP( )
+"DataRate" "variable" ( 10e9 ) PROP( )
+"temp" "variable" ( 27 ) PROP( )
+END

@@ -1,0 +1,5 @@
+artistResMgrCalcExprSetup("true" "plot" "E0" "average(getData("R0:pwr" ?result "tran"))")
+artistResMgrCalcExprSetup("true" "plot" "E2" "average(i("/R0/PLUS" ?result "tran"))")
+artistResMgrCalcExprSetup("true" "plot" "E3" "average(i("/R4/PLUS" ?result "tran"))")
+artistResMgrCalcExprSetup("true" "plot" "E4" "average(getData("R4:pwr" ?result "tran"))")
+artistResMgrCalcExprSetup("true" "plot" "E1" "v("/I0_OUT" ?result "tran") / i("/IO/OUT" ?result "tran")")

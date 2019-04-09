@@ -1,0 +1,66 @@
+\o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 08/24/2014 13:49 (sjfnl844) $
+\o Sub version:		sub-version  s012 
+\o Arguments:		-unmapped -mpssession virtuoso26914 -mpshost ssh-soc 
+\o Working Directory:	ssh-soc:/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds
+\o 64-bit offsets
+\o Qt version: 		4.7.2
+\o changeWorkingDir("/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o Log file is "/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds/libManager.log".
+\o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\o Library Manager customization server connected.
+\a nrResizeWindow(cdsLibManager list(535 96 807 549))
+\a cdsLibManager->FileNewLibButton->value = t
+\a nrSetWindowVisibility(NewLibShell "show")
+\a NewLibShell->QLineEdit2->value = "/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds/"
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(NewLibShell->subDialog)
+\a nrResizeWindow(NewLibShell list(685 91 507 559))
+\a NewLibShell->newLibNameText->value = "ELEC403"
+\a nrDialogAccept(NewLibShell)
+\a NewLibShell->newLibOKButton->value = t
+\a NewLibShell->subDialog->value = '("/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds" "/ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds/")
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a NewLibShell->newLibNameText->value = "ELEC403"
+\o Created new library "ELEC403" at /ubc/ece/home/ugrads/v/v6d9/ELEC403/Cadence_50995133/cds/ELEC403.
+\a nrSetCurrentWindow(NewLibShell)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(782 328 314 129))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "ELEC403"
+\a cdsLibManager->libLineEdit->value = "ELEC403"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "US_8ths"
+\a cdsLibManager->libListBox->value = "ELEC403"
+\a cdsLibManager->libLineEdit->value = "ELEC403"
+\a cdsLibManager->cellListBox->value = "Clock"
+\a cdsLibManager->cellListBox->value = "T3_a_TXFIR"
+\a cdsLibManager->cellLineEdit->value = "T3_a_TXFIR"
+\a cdsLibManager->cellLineEdit->value = "T3_a_TXFIR"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "ELEC403"
+\a cdsLibManager->libLineEdit->value = "ELEC403"
+\a cdsLibManager->cellListBox->value = "T3_a_TXFIR"
+\a cdsLibManager->cellLineEdit->value = "T3_a_TXFIR"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"

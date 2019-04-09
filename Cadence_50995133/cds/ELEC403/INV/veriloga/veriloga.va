@@ -1,0 +1,37 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module INV(IN, OUT);
+
+
+output OUT; voltage OUT;
+input IN; voltage IN;
+
+
+parameter real Vth = 0.5 from [0:inf); // set threshod for input and clock
+parameter real Voh = 1.0 from [0:inf);  // set threshod for input and clock
+parameter real Vol = 0 from [0:inf);  // set threshod for input and clock
+parameter real Delay = 10p from [0:inf);  // set Delay for output
+parameter real Rise = 10p from [0:inf);  // set rise time for output
+parameter real Fall = 10p from [0:inf);  // set fall time for outputs
+
+
+real out_buffer;
+
+analog begin
+    // make sure simulator sees the threshold crossing
+    @(cross(V(IN) -  Vth));
+
+    // compute the logical value of the output
+    if (V(IN) > Vth)
+      out_buffer = Vol;
+    else
+     out_buffer = Voh;
+
+    // create an analog version of logical output
+    V(OUT) <+ transition( out_buffer, Delay, Rise, Fall);
+end
+endmodule
+
+
+

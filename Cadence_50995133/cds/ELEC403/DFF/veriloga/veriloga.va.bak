@@ -1,0 +1,41 @@
+// VerilogA for ELEC403, DFF, veriloga
+
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module DFF(D, CLK, Q, QN);
+
+input D, CLK;
+output Q, QN;
+
+electrical D, CLK, Q, QN;
+
+parameter real Vth = 0.6 from [0:inf); // set threshod for input and clock
+parameter real Voh = 1.2 from [0:inf);  // set threshod for input and clock
+parameter real Vol = 0 from [0:inf);  // set threshod for input and clock
+parameter real Delay = 10p from [0:inf);  // set Delay for output
+parameter real Rise = 10p from [0:inf);  // set rise time for output
+parameter real Fall = 10p from [0:inf);  // set fall time for output
+
+real OUTBUF, OUTNBUF;
+
+analog begin
+  @(cross(V(CLK)- Vth, 1)) begin
+
+    if(V(D) > Vth) begin
+      OUTBUF = Voh;
+      OUTNBUF = Vol;
+     end
+
+    else begin
+      OUTBUF = Vol;
+      OUTNBUF = Voh;
+   end
+   end
+
+V(Q) <+ transition(OUTBUF, Delay, Rise, Fall);
+V(QN) <+ transition(OUTNBUF, Delay, Rise, Fall);
+
+end
+endmodule
